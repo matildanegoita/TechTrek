@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programari Online - Body Fusion Clinic</title>
+    </head>
+    <body>
+        <nav>
+            <a href ="index.html">Acasa</a>
+            <a href="remodelare.html">Remodelare Corporala</a>
+            <a href="nutritie.html">Nutritie</a>
+            <a href="preturi.html">Preturi</a>
+            <a href="programari.html">Programari online</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div>
+            <h1>Programari Online</h1>
+            <form action="submit_programare.php" method="post">
+                <div>
+                    <label for="nume">Nume complet:</label>
+                    <input type="text" name="nume" required>
+                </div>
+                
+                <br> 
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                </div>
+                
+                <br> 
+
+                <div>
+                   <label for="telefon">Telefon:</label>
+                    <input type="tel"  name="telefon" required>
+                </div>
+
+                <br>
+
+                <div>
+                <label for="serviciu">Serviciu dorit:</label>
+                <select id="serviciu" name="serviciu" required>
+                    <option value ="" disabled selected>Selectati serviciul dorit</option>
+                    <option value="consultatie_nutritie">Consultație Nutriție</option>
+                    <option value="lpg_aliance_premium">LPG Aliance Premium</option>
+                    <option value="lpg_ergolift_facial">LPG Ergolift Facial</option>
+                    <option value="drenaj_limfatic">Drenaj Limfatic</option>
+                    <option value="electrostimulare">Elecrostimulare</option>
+                    <option value="criolipoliza">Criolipoliza</option>
+                    <option value="tratament_glow">Tratament Facial Glow</option>
+                    <option value="tratament_antiage">Tratament Facial Anti-age Plus</option>
+                    <option value="epilare_laser">Epilare Definitiva Laser</option>
+
+                </select></div>
+
+                <br>
+    
+                <div>
+
+                    <label for="data">Data programarii:</label>
+                    <input type="date" name="data" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="ora">Ora programarii:</label>
+                    <input type="time" name="ora" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="mesaj">Mesaj suplimentar (opțional):</label>
+                    <textarea name="mesaj" rows="4" cols="50"></textarea>
+                </div>
+
+                <br>
+    
+                <input type="submit" name="submit" value="Trimite Programarea">
+            </form>
+        </div>
+
+        <br>
+
+        <footer style="text-align: center; margin-top: auto;">
+            <p>&copy; 2024 Body Fusion Clinic. Toate drepturile rezervate.</p>
+            <p>Program: Luni - Vineri: 09:00 - 17:00 | Sâmbătă: 10:00 - 14:00 | Duminică: închis</p>
+        </footer>
+    </body>
+    </html>
