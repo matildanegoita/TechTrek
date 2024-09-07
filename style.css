@@ -1,0 +1,479 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #ccb18c;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Center alignment of nav items */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #a38367;
+    border-radius: 5px;
+}
+
+/* Header section */
+h1 {
+    color: #444;
+    margin-top: 40px;
+    text-align: center; /* Center align headers */
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slider img:hover {
+    transform: scale(1.05);
+}
+
+/* Content section */
+div p {
+    max-width: 80%;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: justify; /* Ensure paragraphs are justified */
+}
+
+/* Container for the buttons */
+div.buttons {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Spacing between buttons */
+    margin: 30px auto; /* Center the container and add some margin */
+    max-width: 80%; /* Optional: limit width to prevent stretching */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+/* Styling for buttons */
+div.buttons a {
+    color: white;
+    background-color: #ccb18c; /* Match the button colors with the rest of the theme */
+    padding: 15px 25px; /* Padding for the buttons */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    margin: 10px; /* Margin around each button */
+    display: inline-block; /* Display as inline-block */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    font-size: 18px; /* Font size for readability */
+}
+
+div.buttons a:hover {
+    background-color: #a38367; /* Hover effect color */
+}
+
+/* Styling for the services table */
+.services {
+    max-width: 1000px; /* Limit the width for a better layout */
+    margin: 0 auto; /* Center the table on the page */
+    text-align: center; /* Center-align text */
+    padding: 20px; /* Add padding around the section */
+}
+
+/* Styling the table */
+.services table {
+    width: 100%; /* Full width */
+    border-collapse: separate; /* Separate borders for a more defined look */
+    border-spacing: 20px; /* Space between cells */
+    margin-top: 20px; /* Add margin above the table */
+}
+
+/* Styling for table cells */
+.services td {
+    padding: 10px; /* Padding inside cells */
+    text-align: center; /* Center align text and images in cells */
+    vertical-align: middle; /* Center align vertically */
+    background-color: #ccb18c; /* Light beige background color */
+    border-radius: 10px; /* Rounded corners for cells */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for individual table cells */
+.services td:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Image container styles */
+.image-container {
+    position: relative; /* Establish a positioning context for the text */
+    width: 100%; /* Image container fills the cell width */
+    overflow: hidden; /* Ensure overflow is hidden for hover effect */
+    border-radius: 10px; /* Rounded corners for images */
+    height: 200px; /* Fixed height for consistency */
+}
+
+/* Image styling */
+.image-container img {
+    width: 100%; /* Image takes full width of the container */
+    height: 100%; /* Image takes full height of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for images */
+.image-container:hover img {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+/* Text overlay styles */
+.overlay-text {
+    position: absolute; /* Position relative to the image container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Move text to be exactly at the center */
+    color: black; /* Change text color to white */
+    background:none; /* Semi-transparent background for better visibility */
+    padding: 5px 10px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for text overlay */
+.image-container:hover .overlay-text {
+    background-color: none; /* Darker background on hover */
+}
+/* General styling for the nutrition services section */
+.nutrition-services {
+    max-width: 80%; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center-align text within the container */
+    padding: 20px; /* Add padding around the content */
+}
+
+/* List styling for doctors */
+.doctor-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center-align items */
+    gap: 40px; /* Add spacing between items */
+    margin-top: 20px; /* Add margin above the list */
+}
+
+/* Individual doctor card styling */
+.doctor-list li {
+    max-width: 300px; /* Limit the width of each doctor card */
+    text-align: center; /* Center-align text within each card */
+    background-color: #f9f9f9; /* Add a light background to each card */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding around content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin: 20px 0; /* Add margin below each card */
+    flex: 1 1 300px; /* Flexbox properties to handle responsive layout */
+}
+
+/* Image styling */
+.doctor-list li img {
+    border-radius: 10px; /* Rounded corners for images */
+    width: 100%; /* Full width for responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Paragraph styling inside the cards */
+.doctor-list li p {
+    text-align: justify; /* Justify text for better readability */
+    margin-top: 10px; /* Add space between text and image */
+    line-height: 1.5; /* Improve line spacing */
+}
+/* Styling for the team section */
+.team-section {
+    max-width: 80%; /* Limit width for better readability */
+    margin: 0 auto; /* Center the section */
+    padding: 20px; /* Add some padding around the content */
+    text-align: center; /* Center-align text */
+}
+
+/* General styling for team members */
+.team-member {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: #f9f9f9; /* Light background for the cards */
+    margin: 20px auto; /* Add margin around each card */
+    padding: 20px; /* Padding inside the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Limit the width of each card */
+    gap: 20px; /* Space between image and text */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+/* Image styling for team members */
+.team-member img {
+    border-radius: 10px; /* Rounded corners for images */
+    width: 250px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+}
+
+/* Text container styling for team members */
+.team-member div {
+    text-align: left; /* Align text to the left */
+    max-width: 400px; /* Limit the width of the text container */
+}
+
+/* Heading styling for team member names */
+.team-member h2 {
+    color: #333; /* Text color */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 10px; /* Space below the name */
+    font-size: 24px; /* Font size for better hierarchy */
+}
+
+/* Position styling for team member specialties */
+.team-member p:first-of-type {
+    font-weight: bold; /* Bold for specialties */
+    margin-bottom: 5px; /* Space below the specialty */
+}
+
+/* General paragraph styling for descriptions */
+.team-member p {
+    line-height: 1.6; /* Improve readability with better line spacing */
+    margin: 0; /* Remove default margin */
+}
+/* General styling for the price table section */
+main {
+    max-width: 80%; /* Limit width for better readability */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add some padding around the content */
+    text-align: center; /* Center-align text */
+}
+
+/* Styling the pricing table */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders for a clean look */
+    margin-top: 20px; /* Add margin above the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Table header styling */
+table thead th {
+    background-color: #ccb18c; /* Background color for headers */
+    color: white; /* Text color for headers */
+    padding: 12px 15px; /* Padding for headers */
+    text-align: center; /* Center-align text */
+    font-size: 18px; /* Increase font size */
+}
+
+/* Table body styling */
+table tbody td {
+    padding: 10px 15px; /* Padding for table cells */
+    text-align: center; /* Center-align text */
+    border-bottom: 1px solid #ddd; /* Add bottom border for rows */
+    font-size: 16px; /* Font size for better readability */
+}
+
+/* Alternate row colors for better readability */
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+/* Hover effect for table rows */
+table tbody tr:hover {
+    background-color: #e6e6e6; /* Slightly darker background on hover */
+}
+/* Centered text styling */
+.centered-text {
+    text-align: center; /* Center-align the text */
+    font-size: 18px; /* Increase the font size for better visibility */
+    margin: 20px auto; /* Add margin to separate from other elements */
+    max-width: 80%; /* Limit the width for better readability */
+    color: #333; /* Set a dark color for the text */
+}
+
+/* Form styling */
+form {
+    max-width: 600px; /* Form width */
+    margin: 20px auto; /* Center form */
+    padding: 20px; /* Form padding */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+form div {
+    margin-bottom: 20px; /* Spacing between form elements */
+}
+
+form label {
+    display: block; /* Label block display */
+    margin-bottom: 8px; /* Spacing below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form input[type="tel"], 
+form input[type="date"], 
+form input[type="time"],
+form textarea, 
+form select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding does not exceed container */
+    font-size: 16px; /* Font size */
+}
+
+form input[type="submit"] {
+    background-color: #ccb18c; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 15px 25px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+form input[type="submit"]:hover {
+    background-color: #a38367; /* Hover color */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+/* Contact section styling */
+.contact-section {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 40px auto; /* Center the content */
+    padding: 30px; /* Add padding around content */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align text */
+}
+
+/* Header styling within the contact section */
+.contact-section h1 {
+    color: #333; /* Main text color */
+    font-size: 28px; /* Font size for the main heading */
+    margin-bottom: 10px; /* Margin below the heading */
+}
+
+/* Subheading styling within the contact section */
+.contact-section h2 {
+    color: #444; /* Slightly darker color */
+    font-size: 24px; /* Font size for subheadings */
+    margin-top: 20px; /* Margin above the subheading */
+    margin-bottom: 10px; /* Margin below the subheading */
+}
+
+/* Paragraph styling within the contact section */
+.contact-section p {
+    line-height: 1.6; /* Improve line spacing */
+    margin: 10px 0; /* Margin around paragraphs */
+    font-size: 18px; /* Font size for better readability */
+}
+/* Section styling */
+section {
+    max-width: 900px; /* Limit width for better readability */
+    margin: 40px auto; /* Center the section */
+    padding: 20px; /* Add padding around the content */
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Paragraph styling */
+section p, section ul, section ol {
+    line-height: 1.6; /* Improve line spacing */
+    margin-bottom: 20px; /* Add margin below paragraphs and lists */
+    font-size: 18px; /* Font size for better readability */
+}
+
+/* List styling */
+section ul, section ol {
+    padding-left: 40px; /* Indent lists */
+    list-style: disc; /* Default bullet style for unordered lists */
+}
+
+/* Ordered list styling */
+section ol li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* FAQ styling */
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    font-weight: bold; /* Bold for question text */
+    margin-top: 20px; /* Space above each question */
+    font-size: 18px; /* Increase font size for questions */
+}
+
+dd {
+    margin: 0 0 20px 20px; /* Indent answer text */
+    line-height: 1.6; /* Improve line spacing */
+}
+/* Contact information section styling */
+#contact {
+    text-align: center; /* Center-align the contact text */
+}
+footer p {
+    margin: 5px 0;
+}
