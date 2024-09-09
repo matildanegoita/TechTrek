@@ -80,7 +80,7 @@ div p {
     margin: 20px auto;
     line-height: 1.6;
     font-size: 18px;
-    text-align: justify; /* Ensure paragraphs are justified */
+    text-align: justify; 
 }
 
 /* Container for the buttons */
@@ -96,7 +96,7 @@ div.buttons {
 /* Styling for buttons */
 div.buttons a {
     color: white;
-    background-color: #ccb18c; /* Match the button colors with the rest of the theme */
+    background-color: #ccb18c; 
     padding: 15px 25px; /* Padding for the buttons */
     border-radius: 5px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
@@ -470,10 +470,7 @@ dd {
     margin: 0 0 20px 20px; /* Indent answer text */
     line-height: 1.6; /* Improve line spacing */
 }
-/* Contact information section styling */
-#contact {
-    text-align: center; /* Center-align the contact text */
-}
+
 footer p {
     margin: 5px 0;
 }
