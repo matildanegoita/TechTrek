@@ -386,17 +386,10 @@ form input[type="submit"]:hover {
     background-color: #a38367; /* Hover color */
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 40px;
-}
+
 /* Contact section styling */
 .contact-section {
-    max-width: 800px; /* Limit width for better readability */
+    max-width: 1000px; /* Limit width for better readability */
     margin: 40px auto; /* Center the content */
     padding: 30px; /* Add padding around content */
     background-color: #ffffff; /* White background for contrast */
@@ -451,7 +444,7 @@ section ul, section ol {
 
 /* Ordered list styling */
 section ol li {
-    margin-bottom: 10px; /* Space between list items */
+    margin-bottom: 10px;
 }
 
 /* FAQ styling */
@@ -461,16 +454,24 @@ dl {
 }
 
 dt {
-    font-weight: bold; /* Bold for question text */
-    margin-top: 20px; /* Space above each question */
-    font-size: 18px; /* Increase font size for questions */
+    font-weight: bold;
+    margin-top: 20px; 
+    font-size: 18px;
 }
 
 dd {
-    margin: 0 0 20px 20px; /* Indent answer text */
-    line-height: 1.6; /* Improve line spacing */
+    margin: 0 0 20px 20px; 
+    line-height: 1.6; 
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
 footer p {
     margin: 5px 0;
 }
